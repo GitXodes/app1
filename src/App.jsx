@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from "./Button";
+import Header from "./Header";
 
 // (() => alert("APP Loaded..."))();
 
-function App({data_alt, allt}) {
-  const a = {data_alt}
-  console.log(a)
+function App() {
 
   function counter () {
-    console.log(allt);
+    console.log("counter");
   }
   counter();
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p> Data : {data_alt}</p>
-        <p> Counter:</p>
+
+      <Header/>
+      <div className="App-header">
         <Button className="button_class" name="Click it !!!" border='4px solid blue'/>
         <Button name="Don't Click it !" border='2px solid blue'/>
         <Button name={"Fuck it !"} border='2px solid teal' fontSize='20px'/>
@@ -33,7 +32,7 @@ function App({data_alt, allt}) {
         >
           Learn React
         </a>
-      </header>
+      </div>
     </div>
   );
 }

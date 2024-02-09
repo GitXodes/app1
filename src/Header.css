@@ -1,0 +1,12 @@
+.head {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cld {
+    margin: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: #61dafb;
+}
