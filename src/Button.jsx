@@ -8,14 +8,14 @@ const Button = (props) => {
 
     function clicker() {
         console.log("click!");
-        SetResultState(100
-        );
+        SetResultState(100);
     }
 
     return (
         <div>
-            <button className={"button_inside " + props.className} style={{border: props.border, fontSize: props.fontSize}}
-                    onClick={clicker}>
+            <button className={"button_inside " + props.className}
+                    style={{border: props.border, fontSize: props.fontSize}}
+                    onClick={props.twister ? props.twister : clicker}>
                 {props.name}
             </button>
             <div className="labelInfo">

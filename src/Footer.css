@@ -1,0 +1,20 @@
+#rt {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: darkslategray;
+    border: 1px solid #6b9d9d;
+}
+
+.foot {
+    transition: all 2s;
+    margin: 10px auto;
+    color: #61dafb;
+}
+
+.rotated {
+    transform: rotate(360deg);
+}
